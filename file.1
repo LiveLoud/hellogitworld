@@ -1,11 +1,45 @@
-[0m[0mREADME.txt[0m
-[0mbuild.gradle[0m
-[0mfile.1[0m
-[0mfix.txt[0m
-[0mpom.xml[0m
-[0mraven.txt[0m
-[01;34mresources[0m/
-[01;32mrunme.sh[0m*
-[0msandro.txt[0m
-[01;34msrc[0m/
-[m
+This is a sample project students can use during Matthew's Git class.
+
+We can have a bit of fun with this repo, knowing that we can always reset it to a known good state.  We can apply labels, and branch, then add new code and merge it in to the master branch.
+
+As a quick reminder, this came from one of three locations in either SSH, Git, or HTTPS format:
+
+* git@github.com:matthewmccullough/hellogitworld.git
+* git://github.com/matthewmccullough/hellogitworld.git
+* https://matthewmccullough@github.com/matthewmccullough/hellogitworld.git
+
+We can, as an example effort, even modify this README and change it as if it were source code for the purposes of the class.
+
+This demo also includes an image with changes on a branch for examination of image diff on GitHub.
+apply plugin: 'java'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.8.2'
+}
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.ambientideas</groupId>
+  <artifactId>egitdemo</artifactId>
+  <packaging>jar</packaging>
+  <version>1.0-SNAPSHOT</version>
+  <name>egitdemo</name>
+  <url>http://maven.apache.org</url>
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
+
+Ah, distinctly I remember it was in the bleak December
+#!/bin/sh
+groovyc src/*.groovy
+groovy src/Main.groovy --cp src/Quo usque tandem abutere, Catelina, patientia nostra?
